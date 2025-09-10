@@ -1,17 +1,17 @@
 "use client";
 import { Search } from "lucide-react";
 import { Input } from "../ui/input";
-import { ThemeSwitcher } from "./components/theme-swimer";
+import { SwictherTheme } from "./swither/switcher-theme";
 
 export function HeaderDesktop() {
   return (
-    <header className="container mx-auto px-5 py-4 border-2 ">
-      <div className="relative max-w-sm border">
+    <header className="container mx-auto px-5 py-4 flex justify-between items-center">
+      <div className="relative flex-1 max-w-sm">
         <Input type="text" placeholder="Pesquisar..." className="pl-8" />
         <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
       </div>
-      <div>
-        <ThemeSwitcher />
+      <div className="">
+        <SwictherTheme />
       </div>
     </header>
   );
