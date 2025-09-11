@@ -1,20 +1,15 @@
-"use client";
-import { useEffect, useState } from "react";
 import { HeaderDesktop } from "@/components/header/header";
+import { SwictherTheme } from "@/components/header/swither/switcher-theme";
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
   return (
-    <main>
-      <HeaderDesktop />
+    <main className="container flex justify-between gap-5 items-center mx-auto px-5 py-4 md:py-8">
+      <div className="flex-1">
+        <HeaderDesktop />
+      </div>
+      <div className="">
+        <SwictherTheme />
+      </div>
     </main>
   );
 }
