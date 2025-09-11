@@ -1,15 +1,21 @@
+import { Banner } from "@/components/banner/banner";
 import { HeaderDesktop } from "@/components/header/header";
 import { SwictherTheme } from "@/components/header/swither/switcher-theme";
 
 export default function Home() {
   return (
-    <main className="container flex justify-between gap-5 items-center mx-auto px-5 py-4 md:py-8">
-      <div className="flex-1">
-        <HeaderDesktop />
-      </div>
-      <div className="">
-        <SwictherTheme />
-      </div>
+    <main className="container mx-auto px-5 py-4 md:py-8">
+      <section className="flex justify-between gap-5 items-center">
+        <div className="flex-1">
+          <HeaderDesktop />
+        </div>
+        <div className="">
+          <SwictherTheme />
+        </div>
+      </section>
+      <section>
+        <Banner />
+      </section>
     </main>
   );
 }
