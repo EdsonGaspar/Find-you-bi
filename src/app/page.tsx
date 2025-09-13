@@ -6,8 +6,8 @@ import { SearchDocument } from "@/components/search-document/searchdocument";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-5 py-4 md:py-8">
-      <section className="flex justify-between gap-5 items-center">
+    <main className="">
+      <section className="container mx-auto flex justify-between gap-5 items-center">
         <div className="flex-1">
           <HeaderDesktop />
         </div>
@@ -27,27 +27,27 @@ export default function Home() {
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Joao Paulo"
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Andre Santos"
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Francisca Tomas"
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Jose Maria"
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Maura Silva"
           currentLocal="Segunda esquadra da engvia"
         />
         <CardBanner
-          nome="Edson Gaspar"
+          nome="Andreia Util"
           currentLocal="Segunda esquadra da engvia"
         />
       </section>

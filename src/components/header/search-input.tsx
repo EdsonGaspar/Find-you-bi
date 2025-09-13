@@ -3,7 +3,7 @@ import { H1 } from "../H1/h1";
 
 export function SearchInputDesktop() {
   return (
-    <div className="hidden mx-auto  py-4 md:flex justify-between items-center">
+    <div className="hidden mx-auto py-4 md:flex justify-between items-center">
       <H1>Desktop</H1>
     </div>
   );
