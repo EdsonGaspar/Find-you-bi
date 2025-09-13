@@ -1,4 +1,4 @@
-import { MapPin, MessageCircleQuestionMark, SearchIcon } from "lucide-react";
+import { MapPin, MessageCircleQuestionMark } from "lucide-react";
 import Image from "next/image";
 import imageBi from "@/../public/imgbi.png";
 import {

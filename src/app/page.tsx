@@ -2,6 +2,7 @@ import { Banner } from "@/components/banner/banner";
 import CardBanner from "@/components/card-banner/card";
 import { HeaderDesktop } from "@/components/header/header";
 import { SwictherTheme } from "@/components/header/swither/switcher-theme";
+import { SearchDocument } from "@/components/search-document/searchdocument";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         <div className="">
           <SwictherTheme />
         </div>
+      </section>
+      <section>
+        <SearchDocument />
       </section>
       <section>
         <Banner />
