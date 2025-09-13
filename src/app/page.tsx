@@ -1,4 +1,5 @@
 import { Banner } from "@/components/banner/banner";
+import CardBanner from "@/components/card-banner/card";
 import { HeaderDesktop } from "@/components/header/header";
 import { SwictherTheme } from "@/components/header/swither/switcher-theme";
 
@@ -15,6 +16,36 @@ export default function Home() {
       </section>
       <section>
         <Banner />
+      </section>
+      <section className="grid md:grid-cols-2 lg:grid-cols-3  gap-3 md:my-20">
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
+        <CardBanner
+          nome="Edson Gaspar"
+          currentLocal="Segunda esquadra da engvia"
+        />
       </section>
     </main>
   );
