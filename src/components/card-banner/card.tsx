@@ -1,4 +1,4 @@
-import { SearchIcon } from "lucide-react";
+import { MapPin, MessageCircleQuestionMark, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import imageBi from "@/../public/imgbi.png";
 import {
@@ -21,8 +21,9 @@ export default function CardBanner({ currentLocal, nome }: CardBannerProps) {
           <p className="text-lg font-semibold">
             <span className="text-foreground">Nome:</span> {nome}
           </p>
-          <div>
-            <span>Status: something</span>
+          <div className="flex items-center gap-2">
+            <span className="text-lg font-medium">Status:</span>
+            <MessageCircleQuestionMark className="w-5 h-5" />
           </div>
         </CardTitle>
       </CardHeader>
@@ -31,13 +32,14 @@ export default function CardBanner({ currentLocal, nome }: CardBannerProps) {
           <Image src={imageBi} alt="Imagen" fill />
         </div>
       </CardContent>
-      <CardFooter>
-        <p>
+      <CardFooter className="flex justify-between items-center gap-2">
+        <p className="flex items-center gap-2">
           <span className="text-lg font-semibold text-foreground">
             Local actual:
           </span>{" "}
           {currentLocal}
         </p>
+        <MapPin className="w-5 h-5" />
       </CardFooter>
     </Card>
   );
