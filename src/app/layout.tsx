@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CompletedHeader } from "@/components/comple-header/complet-header";
+import { Footer } from "@/components/footer/footer";
 import { ThemeProvider } from "@/provider/theme-provider";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <CompletedHeader />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
