@@ -1,6 +1,6 @@
 import { SearchInputDesktop, SearchInputMobile } from "./search-input";
 
-export function HeaderDesktop() {
+export function Header() {
   return (
     <header>
       <SearchInputDesktop />

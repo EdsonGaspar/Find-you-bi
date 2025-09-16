@@ -7,7 +7,7 @@ export const data = [
   {
     name: "Andre Carlos",
     currentLocal: "Rangel Coca-cola",
-    bi: "009112BE093",
+    bi: "008112BE093",
   },
   {
     name: "Maria Jose",
