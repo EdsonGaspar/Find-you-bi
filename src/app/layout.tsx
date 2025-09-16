@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { CompletedHeader } from "@/components/comple-header/complet-header";
 import { ThemeProvider } from "@/provider/theme-provider";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="pt" suppressHydrationWarning>
       <body className="antialiased" cz-shortcut-listen="true">
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <CompletedHeader />
           {children}
         </ThemeProvider>
       </body>
