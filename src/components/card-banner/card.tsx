@@ -1,6 +1,8 @@
 import { MapPin, MessageCircleQuestionMark } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import imageBi from "@/../public/imgbi.png";
+import { Button } from "../ui/button";
 import {
   Card,
   CardContent,
@@ -32,14 +34,19 @@ export default function CardBanner({ currentLocal, nome }: CardBannerProps) {
           <Image src={imageBi} alt="Imagen" fill />
         </div>
       </CardContent>
-      <CardFooter className="flex justify-between items-center gap-2">
-        <p className="flex items-center gap-2">
-          <span className="text-lg font-semibold text-foreground">
-            Local actual:
-          </span>{" "}
-          {currentLocal}
-        </p>
-        <MapPin className="w-5 h-5" />
+      <CardFooter className="flex flex-col gap-3.5 ">
+        <div className="flex justify-between items-center gap-2  w-full">
+          <p className="flex items-center gap-2">
+            <span className="text-lg font-semibold text-foreground">
+              Local actual:
+            </span>{" "}
+            {currentLocal}
+          </p>
+          <MapPin className="w-5 h-5" />
+        </div>
+        <Button className="cursor-pointer w-full md:w-2xs text-lg py-5 transition-all duration-300">
+          <Link href={"/register"}>Solicitar devolução</Link>
+        </Button>
       </CardFooter>
     </Card>
   );
