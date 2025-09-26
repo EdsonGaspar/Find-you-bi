@@ -1,4 +1,4 @@
-version: 3.2
+version: "3.2"
 services:
   app:
     container_name: FindBi
@@ -7,7 +7,7 @@ services:
       context: ./
       dockerfile: ./Dockerfile
     ports:
-      - "3005:3000"
+      - 3005:3000
 
     networks:
       - nginx-proxymanager_default
