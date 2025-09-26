@@ -6,7 +6,8 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    ports: -"3005:3000"
+    ports:
+      - "3005:3000"
 
     networks:
       - nginx-proxymanager_default
