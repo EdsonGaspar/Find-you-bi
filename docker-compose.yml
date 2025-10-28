@@ -7,7 +7,7 @@ services:
       context: ./
       dockerfile: ./Dockerfile
     ports:
-      - 3005:3000
+      - 6002:3000
 
     networks:
       - nginx-proxy-manager_default
